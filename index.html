@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet">
+	<link rel="stylesheet" href="beautify.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Blizzard</title>
+</head>
+
+<body>
+	<div class="container">
+		<div>
+			<h1>Starcraft Team</h1>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Role</th>
+						<th>Team</th>
+						<th>Seniority</th>
+						<th>More info</th>
+					</tr>
+				</thead>
+				<tbody id="tbody">
+				</tbody>
+			</table>
+
+		</div>
+
+		<!--	-------------------------------	modal botts------------------->
+
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						
+						<h4 class="modal-title" id="cabeza">Modal Header</h4>
+					</div>
+					
+					<div class="modal-body">
+						<img id="foto">
+						<table class="table table-hover">
+							<tr>
+								<td >Nick:</td>
+								<td id="nick"></td>
+							</tr>
+							<tr>
+								<td >Telefono:</td>
+								<td id="telefono"></td>
+							</tr>
+							<tr>
+								<td >Sitio:</td>
+								<td id="sitio"></td>
+							</tr>
+							<tr>
+								<td >Contacto:</td>
+								<td id="contacto"></td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="blizz.js"></script>
+</body>
+
+</html>
